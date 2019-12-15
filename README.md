@@ -1,4 +1,4 @@
 # ChatBot
-ChatBot designed using amazon lex
+ChatBot designed using Amazon Lex
 
 Created by Jorge Diaz
