@@ -1,0 +1,656 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "Chatbot",
+    "version": "1",
+    "intents": [
+      {
+        "name": "Payment_userthree_two",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "i cancelled three weeks ago"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "I'm sorry for the inconvenience I will direct you to an associate to help sort this out. "
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_one",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Please open a support ticket"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Of course, one moment please..."
+            },
+            {
+              "groupNumber": 2,
+              "contentType": "PlainText",
+              "content": "Thank you for your patience, someone will be on this right away. Your support number is, #456"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_user",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I want to pay for something but dont know how"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "I can help you with anything you would like to purchase "
+            }
+          ]
+        }
+      },
+      {
+        "name": "Inquiry_",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Where can I find videos on cosplay",
+          "cosplay videos"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Our service has many videos on cosplay, simply search cosplay"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_usertwo",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I want to stop my subscription to a feed"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Go to account settings and then navigate to subscriptions and cancel it there"
+            }
+          ]
+        }
+      },
+      {
+        "name": "userhelp_two",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I cant get videos to play on other devices"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "What device are you currently able to watch on."
+            }
+          ]
+        }
+      },
+      {
+        "name": "userhelp_three",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I want to check on my support ticket"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Your ticket is currently being worked on by our professionals"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Inquiry_video",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Whats the lastest video by codingallday"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Codingallday's latest video was Python Basics 1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Paymen_userfour",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "How much does this video cost"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "This video costs $5 per view or $10 for unlimited viewing"
+            }
+          ]
+        }
+      },
+      {
+        "name": "userhelp_two_",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "just my phone works"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Please use the same login credentials you used on your phone, on the other devices you chose to view our service on."
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I uploaded it yesterday at pm"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "It doesn't seem to have bee uploaded, would you like to open a support ticket? "
+            }
+          ]
+        }
+      },
+      {
+        "name": "Inquiry",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Do you have any videos for kids",
+          "do you have music videos"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Yes, our service has a wide selection of these videos"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_userfour_",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "How much does the subscription for this user cost"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "A subscription for this user is $15 per month "
+            }
+          ]
+        }
+      },
+      {
+        "name": "userhelp_three_",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "when will it be resolved"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "The estimated wait time is currently at ~30 mins. Thank you for your patience."
+            }
+          ]
+        }
+      },
+      {
+        "name": "TroubleShooter",
+        "version": "6",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I'm having trouble",
+          "I need help",
+          "help"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "How can I help you today?"
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_two_",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "My latest video was at pm yesterday"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "I have found your video, what would you like to do?"
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_three_",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I didnt know there was a minute max time"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Sorry for the inconvenience, is there anything else I can help you with today? "
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_two",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "My subscription page is not showing my latest videos"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Please provide the time when this video was uploaded "
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_userthree_",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "For a subscription to nownews"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "It shows that you are no longer subscribed "
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_contenttwo_three",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Do I have any money that hasnt been paid out"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "No, all payments have been fulfilled."
+            }
+          ]
+        }
+      },
+      {
+        "name": "userhelp_",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I bought xyz video on but dont see it as able to play"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Let me see what I can do..."
+            },
+            {
+              "groupNumber": 2,
+              "contentType": "PlainText",
+              "content": "I'm sorry for the inconvenience. Here is your support ticket number, #345 ,and someone this will be resolved soon. "
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_three",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Why was my video cut off"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "There are 10 minute caps on all videos, this may have been your problem. "
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_three_three",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Can I suggest a trim function be added on submission"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Yes, this will be sent to our suggestion box and may come in a future update. "
+            },
+            {
+              "groupNumber": 2,
+              "contentType": "PlainText",
+              "content": "Thank you for your suggestion!"
+            }
+          ]
+        }
+      },
+      {
+        "name": "UserHelp",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I cant get access to content Ive paid for"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Could you provide the name and date you purchased said content"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_content",
+        "version": "5",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I want to charge five dollars for this video per view",
+          "I want to charge ten dollars for this video for unlimited viewing",
+          "I want to setup a subscription to my channel or streams for fifteen dollars"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Of course! This will be in effect shortly"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_contenttwo_",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What views have I gotten since last week"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "You have 0 views "
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_contenttwo",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Im not getting paid for my views or subscriptions"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "All payments have been sent out"
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP_two_two",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Please make this video first on my page"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Of course! It will now be displayed as the first video on your page."
+            }
+          ]
+        }
+      },
+      {
+        "name": "Payment_userthree",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Why am I still getting charged"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "What are you getting charged for?"
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContentP",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "My latest video isnt online"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Your video doesn't seem to have been uploaded."
+            }
+          ]
+        }
+      }
+    ],
+    "voiceId": "0",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 300,
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, can you please repeat that?"
+        }
+      ],
+      "maxAttempts": 5
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, I could not understand. Goodbye."
+        }
+      ]
+    },
+    "detectSentiment": true
+  }
+}
